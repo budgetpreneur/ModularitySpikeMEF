@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net40;net45;net461;net48</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- / <Nullable>enable</Nullable> -->
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+    <PackageReference Include="AsyncBridge.JetBrains" Version="0.1.1">
+      <PrivateAssets>None</PrivateAssets>
+    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <ProjectReference Include="..\PubnubApi.HttpWebRequest\PubnubApi.HttpWebRequest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="System" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="5.0.0" />
+    <ProjectReference Include="..\PubnubApi.HttpWebRequest\PubnubApi.HttpWebRequest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <PackageReference Include="System.ComponentModel.Composition" Version="6.0.0" />
+    <ProjectReference Include="..\PubnubApi.HttpWebRequest\PubnubApi.HttpWebRequest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <PackageReference Include="System.ComponentModel.Composition" Version="6.0.0" />
+    <ProjectReference Include="..\PubnubApi.HttpWebRequest\PubnubApi.HttpWebRequest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="System.ComponentModel.Composition" Version="6.0.0" />
+    <ProjectReference Include="..\PubnubApi.HttpClient\PubnubApi.HttpClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="IPublishOperation.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubnubApi.Base\PubnubApi.Base.csproj" />
+    <ProjectReference Include="..\PubnubApi.Contracts\PubnubApi.Contracts.csproj" />
+    <ProjectReference Include="..\PubnubApi.Types\PubnubApi.Types.csproj" />
+  </ItemGroup>
+
+</Project>

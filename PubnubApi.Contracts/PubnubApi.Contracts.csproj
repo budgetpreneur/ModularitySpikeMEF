@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net35;net40;net45;net461;net48;</TargetFrameworks>
+    <ImplicitUsings>false</ImplicitUsings>
+    <!--/ <Nullable>enable</Nullable> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IPubnubLog.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubnubApi.Types\PubnubApi.Types.csproj" />
+  </ItemGroup>
+
+</Project>

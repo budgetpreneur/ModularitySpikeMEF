@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Composition" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubnubApi.Base\PubnubApi.Base.csproj" />
+    <ProjectReference Include="..\PubnubApi.Json\PubnubApi.Json.csproj" />
+    <ProjectReference Include="..\PubnubApi.Publish\PubnubApi.Publish.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+/.vs/*
+/ConsoleAppMEF/obj/*
+/Pubnub.Http/obj/*
+/PubnubApi.Http/obj/*
+/PubnubApi.Base/obj/*
+/PubnubApi.Contracts/obj/*
+/PubnubApi.HttpClient/obj/*
+/PubnubApi.HttpWebRequest/bin/*
+/PubnubApi.HttpWebRequest/obj/*
+/PubnubApi.Json/obj/*
+/PubnubApi.Publish/obj/*
+/PubnubApi.Types/obj/*
